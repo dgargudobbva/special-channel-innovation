@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+	<ModulePrefs title="menu portal BBVA Special Channel Innovation" 
+		title_url=""
+		author=""
+		author_email=""
+		description="GadGet para Google Sites que muestre una barra de menu."
+		screenshot=""
+		thumbnail=""  
+		scrolling="false"
+		author_location="Madrid, Spain"
+		scaling="false">
+		<Require feature="dynamic-height"/>
+		<Require feature="setprefs"/>
+	</ModulePrefs> 
+   <UserPref name="VarHomeURL" display_name="URL Home:" default_value=""/> 
+   <UserPref name="VarOpcion1Texto" display_name="Texto Opcion 1:" default_value=""/>
+   <UserPref name="VarOpcion1URL" display_name="URL Opcion 1:" default_value=""/>
+   <UserPref name="VarOpcion2Texto" display_name="Texto Opcion 2:" default_value=""/>
+   <UserPref name="VarOpcion2URL" display_name="URL Opcion 2:" default_value=""/>
+   <UserPref name="VarOpcion3Texto" display_name="Texto Opcion 3:" default_value=""/>
+   <UserPref name="VarOpcion3URL" display_name="URL Opcion 3:" default_value=""/>
+   <UserPref name="VarOpcion4Texto" display_name="Texto Opcion 4:" default_value=""/>
+   <UserPref name="VarOpcion4URL" display_name="URL Opcion 4:" default_value=""/>
+   <UserPref name="VarOpcion5Texto" display_name="Texto Opcion 5:" default_value=""/>
+   <UserPref name="VarOpcion5URL" display_name="URL Opcion 5:" default_value=""/>
+   <UserPref name="VarOpcion6Texto" display_name="Texto Opcion 6:" default_value=""/>
+   <UserPref name="VarOpcion6URL" display_name="URL Opcion 6:" default_value=""/>
+   <UserPref name="VarOpcion7Texto" display_name="Texto Opcion 7:" default_value=""/>
+   <UserPref name="VarOpcion7URL" display_name="URL Opcion 7:" default_value=""/>
+   <UserPref name="VarOpcion8Texto" display_name="Texto Opcion 8:" default_value=""/>
+   <UserPref name="VarOpcion8URL" display_name="URL Opcion 8:" default_value=""/>
+   <Content type="html" view="configuration"  preferred_height="480">
+   <![CDATA[
+		<script type="text/javascript" src="https://special-channel-innovation.googlecode.com/svn/trunk/editorbbcode.js"></script>
+		<style>
+			table td {
+				color: #000;
+				font-size: 11px;
+				font-weight: bold;
+			}
+			table td input,
+			textarea {
+				color: #000;
+				font-size: 11px;				
+			}			
+			.opcTexto {
+				width: 200px;
+			}
+			.opcURL {
+				width: 345px;
+			}
+      .destacado {
+        color:red;
+        font-size:20px;
+        font-weight:bold;
+      }
+		</style>
+		<table width="100%" border="0" id="tablaconfig">			
+      <tr>
+        <th> Introduce el Texto y la URL de las opciones que quieras activar en la barra de men&uacute;: </th>
+      </tr>
+			<tr> 
+				<td>
+					Home - URL: <input type="text" id="VarHomeURL" class="opcURL" value="__UP_VarHomeURL__" onchange="registra('VarHomeURL')">					
+				</td>
+			</tr>
+			<tr> 
+				<td>
+					Opci&oacute;n 1 - Texto: <input type="text" id="VarOpcion1Texto" class="opcTexto" value="__UP_VarOpcion1Texto__" onchange="registra('VarOpcion1Texto')">		
+					URL: <input type="text" id="VarOpcion1URL" class="opcURL" value="__UP_VarOpcion1URL__" onchange="registra('VarOpcion1URL')">					
+				</td>
+			</tr>
+			<tr>		
+				<td>
+					Opci&oacute;n 2 - Texto: <input type="text" id="VarOpcion2Texto" class="opcTexto" value="__UP_VarOpcion2Texto__" onchange="registra('VarOpcion2Texto')">		
+					URL: <input type="text" id="VarOpcion2URL" class="opcURL" value="__UP_VarOpcion2URL__" onchange="registra('VarOpcion2URL')">					
+				</td>
+			</tr>
+			<tr> 
+				<td>
+					Opci&oacute;n 3 - Texto: <input type="text" id="VarOpcion3Texto" class="opcTexto" value="__UP_VarOpcion3Texto__" onchange="registra('VarOpcion3Texto')">		
+					URL: <input type="text" id="VarOpcion3URL" class="opcURL" value="__UP_VarOpcion3URL__" onchange="registra('VarOpcion3URL')">					
+				</td>
+			</tr>
+			<tr> 
+				<td>
+					Opci&oacute;n 4 - Texto: <input type="text" id="VarOpcion4Texto" class="opcTexto" value="__UP_VarOpcion4Texto__" onchange="registra('VarOpcion4Texto')">		
+					URL: <input type="text" id="VarOpcion4URL" class="opcURL" value="__UP_VarOpcion4URL__" onchange="registra('VarOpcion4URL')">					
+				</td>
+			</tr>
+			<tr> 
+				<td>
+					Opci&oacute;n 5 - Texto: <input type="text" id="VarOpcion5Texto" class="opcTexto" value="__UP_VarOpcion5Texto__" onchange="registra('VarOpcion5Texto')">		
+					URL: <input type="text" id="VarOpcion5URL" class="opcURL" value="__UP_VarOpcion5URL__" onchange="registra('VarOpcion5URL')">					
+				</td>
+			</tr>
+			<tr> 
+				<td>
+					Opci&oacute;n 6 - Texto: <input type="text" id="VarOpcion6Texto" class="opcTexto" value="__UP_VarOpcion6Texto__" onchange="registra('VarOpcion6Texto')">		
+					URL: <input type="text" id="VarOpcion6URL" class="opcURL" value="__UP_VarOpcion6URL__" onchange="registra('VarOpcion6URL')">					
+				</td>
+			</tr>
+			<tr> 
+				<td>
+					Opci&oacute;n 7 - Texto: <input type="text" id="VarOpcion7Texto" class="opcTexto" value="__UP_VarOpcion7Texto__" onchange="registra('VarOpcion7Texto')">		
+					URL: <input type="text" id="VarOpcion7URL" class="opcURL" value="__UP_VarOpcion7URL__" onchange="registra('VarOpcion7URL')">					
+				</td>
+			</tr>
+			<tr> 
+				<td>
+					Opci&oacute;n 8 - Texto: <input type="text" id="VarOpcion8Texto" class="opcTexto" value="__UP_VarOpcion8Texto__" onchange="registra('VarOpcion8Texto')">		
+					URL: <input type="text" id="VarOpcion8URL" class="opcURL" value="__UP_VarOpcion8URL__" onchange="registra('VarOpcion8URL')">					
+				</td>
+			</tr>
+      <tr>
+        <td class="destacado"><br/><br/>No modificar la altura y el ancho del gadget</td>
+      </tr>         
+         
+		<script type="text/javascript">			
+			// Get userprefs
+			var prefs = new gadgets.Prefs();			
+			function registra(variable)
+			{
+				prefs.set(variable,document.getElementById(variable).value);
+			}	
+			gadgets.window.adjustHeight();
+		</script>   
+	]]>
+	</Content>
+
+	<Content type="html">
+	<![CDATA[
+
+		<style type="text/css">
+			/*
+			This copyright notice must be kept untouched in the stylesheet at all times.
+			The original version of this stylesheet and the associated (x)html
+			is available at http://www.stunicholls.com/menu/jquery-dropline-7.html
+			Copyright (c) 2005-2008 Stu Nicholls. All rights reserved.
+			This stylesheet and the associated (x)html may be modified in any
+			way to fit your requirements.
+			*/
+
+			#menu {
+				margin-top:0px;
+				position:relative;
+				height:38px;
+			}
+			#dropline {
+				position:relative;
+				font-size:12px;
+				height:38px;
+				background:url(https://special-channel-innovation.googlecode.com/svn/trunk/fondomenuhome38.png) no-repeat;
+			}
+			#dropline,
+			#dropline ul {
+				padding:0px;
+				margin:0;
+				list-style:none;
+				width:948px;
+			}
+			#dropline table {
+				border-collapse:collapse;
+				margin:-1px -10px 0 0;
+				padding:0;
+				width:0;
+				height:0;
+				font-size:12px;
+			}
+			#dropline li {
+				float:left;
+				height:38px;
+			width: 97px;
+			
+			}
+			#dropline li a {
+				float:left;
+				display:block;
+				height:37px;
+				line-height:38px;
+				padding:0 20px 0 10px;
+				font-family:arial, sans-serif;
+				font-size:11px;
+				color:#fff;
+				text-decoration:none;
+				font-weight:bold;
+				padding:0px 19px 0px 10px;
+			margin-right:auto;
+			margin-left:auto;
+			}
+			#dropline li ul li a {
+				color: rgb(102, 102, 102);
+			}
+			#dropline li a.principal {
+				color:#fff;
+			}
+			#dropline li a.down {
+				color:#fff;
+				background:url(https://special-channel-innovation.googlecode.com/svn/trunk/down.gif) no-repeat right center;
+			}
+			#dropline li ul li a.down {
+				font-size:14px;
+				font-weight:bold;
+			}
+			#dropline li ul {
+				position:absolute;
+				top:38px;
+				left:-9999px;
+				z-index:10;
+				background:url(https://special-channel-innovation.googlecode.com/svn/trunk/fade.png);
+			}
+			#dropline li ul.floatRight li {
+				float:right;
+			}
+
+			#title-crumbs {
+					font-size:12px;
+					color:#3F78B2;
+					text-transform: capitalize;
+					margin-top: 7px;
+				}
+			a.linkBreadCrumb,
+			a:visited.linkBreadCrumb {
+				fon-weight: normal;
+				font-size:12px;
+				color:#3F78B2;
+				text-decoration:none;
+				text-transform: capitalize;
+			}
+			a:hover.linkBreadCrumb,
+			a:active.linkBreadCrumb {
+				font-style: normal;
+				font-size:12px;
+				color:#009EE5;
+				fon-weight: normal;
+				text-decoration:none;		
+				text-transform: capitalize;
+			}
+			.currentBreadCrumb {
+				fon-weight: bold;
+				font-size:12px;
+				color:#009EE5;
+				text-decoration:none;
+				text-transform: capitalize;		
+			}		
+		</style>
+
+		<div id="content">
+      <div id="title-crumbs">breadcrumbs</div>
+    </div>
+
+		<script src="https://special-channel-innovation.googlecode.com/svn/trunk/js/jquery-1.js" type="text/javascript"></script>
+
+		<script type="text/javascript">
+
+			$(document).ready(function()
+			{
+				$("#dropline li.current").children("ul").css("left", "0px").show();
+				$("#dropline li.current").children(":first-child").css("color", "#c00");
+				$("#dropline li").hover(function()
+				{
+					if(this.className.indexOf("current") == -1)  
+					{
+						getCurrent = $(this).parent().children("li.current:eq(0)");
+						if(this.className.indexOf("top") != -1)  
+						{
+							$(this).children("a:eq(0)").css("background-color","#2586d7");
+						}
+						else
+						{
+							$(this).children("a:eq(0)").css("color","#000");
+						}
+
+						if (getCurrent = 1)
+						{
+							$(this).parent().children("li.current:eq(0)").children("ul").hide();
+						}
+
+						$(this).children("ul:eq(0)").css("left", "0px").show();
+					}
+				},function()
+					{
+						if(this.className.indexOf("current") == -1)  
+						{
+							getCurrent = $(this).parent().children("li.current:eq(0)");
+
+							if(this.className.indexOf("top") != -1)
+							{
+								$(this).children("a:eq(0)").css("color","#fff");
+								$(this).children("a:eq(0)").css("background-color","transparent");
+							}
+							else
+							{					
+								$(this).children("a:eq(0)").css("color","#666");
+							}
+
+							if (getCurrent = 1 )
+							{				    
+								$(this).parent().children("li.current:eq(0)").children("ul").show();
+							}
+							
+							$(this).children("ul:eq(0)").css("left", "-99999px").hide();
+						}
+					}
+				);
+			});
+		</script>
+
+		<script type="text/javascript" src="https://special-channel-innovation.googlecode.com/svn/trunk/bbcode2html.js"></script>
+
+		<script type="text/javascript">
+			var html="";
+			// Obtener userprefs
+			var prefs = new gadgets.Prefs();
+			var VarHomeURL=prefs.getString("VarHomeURL");
+			var VarOpcion1Texto=prefs.getString("VarOpcion1Texto");
+			var VarOpcion1URL=prefs.getString("VarOpcion1URL");
+			var VarOpcion2Texto=prefs.getString("VarOpcion2Texto");
+			var VarOpcion2URL=prefs.getString("VarOpcion2URL");
+			var VarOpcion3Texto=prefs.getString("VarOpcion3Texto");
+			var VarOpcion3URL=prefs.getString("VarOpcion3URL");
+			var VarOpcion4Texto=prefs.getString("VarOpcion4Texto");
+			var VarOpcion4URL=prefs.getString("VarOpcion4URL");
+			var VarOpcion5Texto=prefs.getString("VarOpcion5Texto");
+			var VarOpcion5URL=prefs.getString("VarOpcion5URL");
+			var VarOpcion6Texto=prefs.getString("VarOpcion6Texto");
+			var VarOpcion6URL=prefs.getString("VarOpcion6URL");
+			var VarOpcion7Texto=prefs.getString("VarOpcion7Texto");
+			var VarOpcion7URL=prefs.getString("VarOpcion7URL");
+			var VarOpcion8Texto=prefs.getString("VarOpcion8Texto");
+			var VarOpcion8URL=prefs.getString("VarOpcion8URL");
+			
+			function insertarOpcion()
+			{
+				if ((VarHomeURL!=""))
+				{
+					html+='<li class="home"><a href="' + VarHomeURL + '" style="color:#fff;width:10px;margin-left:5px;" target="_parent" onclick="mark"></li>';
+				}
+				if ((VarOpcion1Texto!="")&&(VarOpcion1URL!=""))
+				{
+					html+='<li class="top"><a href="' + VarOpcion1URL + '" class="principal" target="_parent">' + VarOpcion1Texto + '</a></li>';
+				}
+				if ((VarOpcion2Texto!="")&&(VarOpcion2URL!=""))
+				{
+					html+='<li class="top"><a href="' + VarOpcion2URL + '" class="principal" target="_parent">' + VarOpcion2Texto + '</a></li>';
+        }
+				if ((VarOpcion3Texto!="")&&(VarOpcion3URL!=""))
+				{
+					html+='<li class="top"><a href="' + VarOpcion3URL + '" class="principal" target="_parent">' + VarOpcion3Texto + '</a></li>';
+        }
+				if ((VarOpcion4Texto!="")&&(VarOpcion4URL!=""))
+				{
+					html+='<li class="top"><a href="' + VarOpcion4URL + '" class="principal" target="_parent">' + VarOpcion4Texto + '</a></li>';
+        }
+				if ((VarOpcion5Texto!="")&&(VarOpcion5URL!=""))
+				{
+					html+='<li class="top"><a href="' + VarOpcion5URL + '" class="principal" target="_parent">' + VarOpcion5Texto + '</a></li>';
+        }
+				if ((VarOpcion6Texto!="")&&(VarOpcion6URL!=""))
+				{
+					html+='<li class="top"><a href="' + VarOpcion6URL + '" class="principal" target="_parent">' + VarOpcion6Texto + '</a></li>';
+        }
+				if ((VarOpcion7Texto!="")&&(VarOpcion7URL!=""))
+				{
+					html+='<li class="top"><a href="' + VarOpcion7URL + '" class="principal" target="_parent">' + VarOpcion7Texto + '</a></li>';
+        }
+				if ((VarOpcion8Texto!="")&&(VarOpcion8URL!=""))
+				{
+					html+='<li class="top"><a href="' + VarOpcion8URL + '" class="principal" target="_parent">' + VarOpcion8Texto + '</a></li>';
+        }
+				return html;
+			}
+			
+			document.body.style.backgroundColor="#fff";			
+			html+='<div id="menu">';
+			html+='<ul id="dropline">';  
+			html+=insertarOpcion();			
+			html+='</ul>';
+			html+='</div>';
+			document.getElementById("content").innerHTML = html;
+			gadgets.window.adjustHeight();
+		</script>
+	<!-- end of content -->
+	]]></Content>
+</Module>
