@@ -5,8 +5,8 @@
     <Require feature="setprefs"/>
   </ModulePrefs>
   <UserPref name="VarrootSite" display_name="Root Site:" default_value=""/>
-  <UserPref name="VarHomeURL" display_name="URL Home:" default_value=""/>
-  <UserPref name="VarOpcion1Texto" display_name="Texto Opcion 1:" default_value=""/>
+  <UserPref name="VarHomeURL" display_name="URL Home:" datatype="string" default_value=""/>
+  <UserPref name="VarOpcion1Texto" display_name="Texto Opcion 1:" datatype="string" default_value=""/>
   <UserPref name="VarOpcion1URL" display_name="URL Opcion 1:" default_value=""/>
   <UserPref name="VarOpcion2Texto" display_name="Texto Opcion 2:" default_value=""/>
   <UserPref name="VarOpcion2URL" display_name="URL Opcion 2:" default_value=""/>
@@ -90,7 +90,8 @@
 			#menu {	margin-top:0px;	position:relative;	height:38px;	}	
 			#dropline {	
 				position:relative;	
-				font-size:12px;	height:38px;	
+				font-size:12px;
+        height:38px;	
 				background:url(https://special-channel-innovation.googlecode.com/svn/trunk/fondomenuhome38.png) no-repeat;	
 			}	
 			#dropline,	
@@ -109,21 +110,20 @@
 				font-size:12px;	
 			}	
 			#dropline li {	
-				float:left;	height:38px;	
-				width: 97px;		
+				float: left;	
+        height: 38px;
 			}	
 			#dropline li a {	
-				float:left;	display:block;	
-				height:37px;	
-				line-height:38px;	
-				padding:0 20px 0 10px;	
-				font-family:arial, sans-serif;	
-				font-size:11px;	color:#fff;	
-				text-decoration:none;	
-				font-weight:bold;	
-				padding:0px 19px 0px 10px;	
-				margin-right:auto;	
-				margin-left:auto;	
+				float: left;	
+        display: block;	
+				height: 37px;
+				line-height: 38px;	
+				padding: 0 20px 0 10px;	
+				font-family: arial, sans-serif;	
+				font-size: 11px;	color:#fff;	
+				text-decoration: none;	
+				font-weight: bold;	
+				padding: 0px 19px 0px 10px;	
 			}	
 			#dropline li ul li a {	
 				color: rgb(102, 102, 102);	
@@ -156,7 +156,7 @@
 				margin-top: 7px;	
 			}	
 			a.linkBreadCrumb, a:visited.linkBreadCrumb {	
-				fon-weight: normal;	
+				font-weight: normal;	
 				font-size:12px;	
 				color:#3F78B2;	
 				text-decoration:none;	
@@ -165,7 +165,7 @@
 			a:hover.linkBreadCrumb,	a:active.linkBreadCrumb {	
 				font-style: normal;	
 				font-size:12px;	color:#009EE5;	
-				fon-weight: normal;	
+				font-weight: normal;	
 				text-decoration:none;			
 				text-transform: 
 				capitalize;	
@@ -344,12 +344,13 @@
 			var VarOpcion7URL=prefs.getString("VarOpcion7URL");	
 			var VarOpcion8Texto=prefs.getString("VarOpcion8Texto");	
 			var VarOpcion8URL=prefs.getString("VarOpcion8URL");		
+
 			function insertarOpcion() {	
 				if ((VarHomeURL!="")) {	
 					html+='<li id="urlHome" class="home"><a href="' + VarHomeURL + '" style="color:#fff;width:10px;margin-left:5px;" target="_parent" onclick="mark"></li>';	
 				}	
 				if ((VarOpcion1Texto!="")&&(VarOpcion1URL!=""))	{	
-					html+='<li id="urlOpc1" class="top"><a href="' + VarOpcion1URL + '" class="principal" target="_parent">' + VarOpcion1Texto + '</a></li>';	
+					html+='<li id="urlOpc1" class="top"><a href="' + VarOpcion1URL + '" class="principal" target="_parent">' + VarOpcion1Texto + '</a></li>';  
 				}	
 				if ((VarOpcion2Texto!="")&&(VarOpcion2URL!=""))	{	
 					html+='<li id="urlOpc2" class="top"><a href="' + VarOpcion2URL + '" class="principal" target="_parent">' + VarOpcion2Texto + '</a></li>'; 
