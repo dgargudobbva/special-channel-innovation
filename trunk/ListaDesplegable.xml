@@ -171,12 +171,12 @@
 		<!-- Pintamos los elementos que tengan Titulo y Texto. -->
 			/* Generar el codigo HTML Primer Elemento*/
 			if ((varTit01!="")&&(varTxt01!=""))	{	
-				HTMLLista = '<h3 class="ui-accordion-header ui-state-default ui-accordion-header-active ui-state-active ui-corner-top ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>';
+				HTMLLista = '<h3 class="ui-accordion-header ui-state-default ui-corner-top ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>';
 
         HTMLLista += Encoder.htmlDecode(varTit01);
         HTMLLista += '</h3>';
 			
-				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false" style="display: none; height: 131px;">';
+				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false" style="display: block;">';
            
         HTMLLista += Encoder.htmlDecode(varTxt01);
         HTMLLista += '</div>';
@@ -189,7 +189,7 @@
         HTMLLista += Encoder.htmlDecode(varTit02);
         HTMLLista += '</h3>';
 				
-				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="false" style="display: none; height: 131px;">';
+				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="false" style="display: block;">';
            
         HTMLLista += Encoder.htmlDecode(varTxt02);
         HTMLLista += '</div>';
@@ -202,7 +202,7 @@
         HTMLLista += Encoder.htmlDecode(varTit03);
         HTMLLista += '</h3>';
 				
-				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="false" style="display: none; height: 131px;">';
+				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="false" style="display: block;">';
            
         HTMLLista += Encoder.htmlDecode(varTxt03);
         HTMLLista += '</div>';
@@ -215,7 +215,7 @@
         HTMLLista += Encoder.htmlDecode(varTit04);
         HTMLLista += '</h3>';
 				
-				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="false" style="display: none; height: 131px;">';
+				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="false" style="display: block;">';
            
         HTMLLista += Encoder.htmlDecode(varTxt04);
         HTMLLista += '</div>';
@@ -228,7 +228,7 @@
         HTMLLista += Encoder.htmlDecode(varTit05);
         HTMLLista += '</h3>';
 				
-				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="false" style="display: none; height: 131px;">';
+				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="false" style="display: block;">';
            
         HTMLLista += Encoder.htmlDecode(varTxt05);
         HTMLLista += '</div>';
@@ -241,7 +241,7 @@
         HTMLLista += Encoder.htmlDecode(varTit06);
         HTMLLista += '</h3>';
 				
-				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-12" aria-labelledby="ui-id-11" role="tabpanel" aria-hidden="false" style="display: none; height: 131px;">';
+				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-12" aria-labelledby="ui-id-11" role="tabpanel" aria-hidden="false" style="display: block;">';
            
         HTMLLista += Encoder.htmlDecode(varTxt06);
         HTMLLista += '</div>';
@@ -254,7 +254,7 @@
         HTMLLista += Encoder.htmlDecode(varTit07);
         HTMLLista += '</h3>';
 				
-				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-14" aria-labelledby="ui-id-13" role="tabpanel" aria-hidden="false" style="display: none; height: 131px;">';
+				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-14" aria-labelledby="ui-id-13" role="tabpanel" aria-hidden="false" style="display: block;">';
            
         HTMLLista += Encoder.htmlDecode(varTxt07);
         HTMLLista += '</div>';
@@ -267,7 +267,7 @@
         HTMLLista += Encoder.htmlDecode(varTit08);
         HTMLLista += '</h3>';
 				
-				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-16" aria-labelledby="ui-id-15" role="tabpanel" aria-hidden="false" style="display: none; height: 131px;">';
+				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-16" aria-labelledby="ui-id-15" role="tabpanel" aria-hidden="false" style="display: block;">';
            
         HTMLLista += Encoder.htmlDecode(varTxt08);
         HTMLLista += '</div>';
@@ -280,7 +280,7 @@
         HTMLLista += Encoder.htmlDecode(varTit09);
         HTMLLista += '</h3>';
 				
-				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-18" aria-labelledby="ui-id-17" role="tabpanel" aria-hidden="false" style="display: none; height: 131px;">';
+				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-18" aria-labelledby="ui-id-17" role="tabpanel" aria-hidden="false" style="display: block;">';
            
         HTMLLista += Encoder.htmlDecode(varTxt09);
         HTMLLista += '</div>';
@@ -293,7 +293,7 @@
         HTMLLista += Encoder.htmlDecode(varTit10);
         HTMLLista += '</h3>';
 				
-				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-18" aria-labelledby="ui-id-17" role="tabpanel" aria-hidden="false" style="display: none; height: 131px;">';
+				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-18" aria-labelledby="ui-id-17" role="tabpanel" aria-hidden="false" style="display: block;">';
            
         HTMLLista += Encoder.htmlDecode(varTxt10);
         HTMLLista += '</div>';
