@@ -2,6 +2,7 @@
 <Module>
 	<ModulePrefs title="Lista Desplegable de Textos">
 	<Require feature="dynamic-height"/>
+  </ModulePrefs>
 
 	<Content type="html">
 	<![CDATA[
