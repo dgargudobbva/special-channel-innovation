@@ -36,7 +36,7 @@
         HTMLLista += 'Titulo 1';
         HTMLLista += '</h3><div>';
         
-        HTMLLista += '<h3 class="ui-accordion-header ui-state-default ui-corner-top ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Titulo 1.1';
+        HTMLLista += '<h3 class="ui-accordion-header ui-state-default ui-corner-top ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Titulo 1.1</h3>';
 			
 				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false" style="display: block;">';
            
