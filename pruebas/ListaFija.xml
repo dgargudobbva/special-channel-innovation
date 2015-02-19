@@ -36,16 +36,16 @@
         HTMLLista += 'Titulo 1';
         HTMLLista += '</h3><div id="accordion" class="ui-accordion ui-widget ui-helper-reset" role="tablist">';
         
-        HTMLLista += '<h3 class="ui-accordion-header ui-state-default ui-corner-top ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Titulo 1.1</h3>';
+        HTMLLista += '<h3 class="ui-accordion-header ui-state-default ui-corner-top ui-accordion-icons" role="tab" id="ui-id-a1" aria-controls="ui-id-a2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Titulo 1.1</h3>';
 			
-				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false" style="display: block;">';
+				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-a2" aria-labelledby="ui-id-a1" role="tabpanel" aria-hidden="false" style="display: block;">';
            
         HTMLLista += "Texto de Prueba 1.1";
         HTMLLista += '</div>';
 
-        HTMLLista += '<h3 class="ui-accordion-header ui-state-default ui-corner-top ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Titulo 1.2</h3>';
+        HTMLLista += '<h3 class="ui-accordion-header ui-state-default ui-corner-top ui-accordion-icons" role="tab" id="ui-id-a3" aria-controls="ui-id-a4" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Titulo 1.2</h3>';
 			
-				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false" style="display: block;">';
+				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-a3" aria-labelledby="ui-id-a4" role="tabpanel" aria-hidden="false" style="display: block;">';
            
         HTMLLista += "Texto de Prueba 1.2";
         HTMLLista += '</div>';
