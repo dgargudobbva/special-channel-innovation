@@ -33,7 +33,7 @@
 			/* Generar el codigo HTML Primer Elemento*/
 				HTMLLista = '<h3 class="ui-accordion-header ui-state-default ui-corner-top ui-accordion-icons" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>';
 
-        HTMLLista += Encoder.htmlDecode(varTit01);
+        HTMLLista += "Titulo 1";
         HTMLLista += '</h3>';
 			
 				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false" style="display: block;">';
@@ -44,12 +44,12 @@
 
         HTMLLista = '<h3 class="ui-accordion-header ui-state-default ui-corner-top ui-accordion-icons" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>';
          
-        HTMLLista += "Texto de Prueba 2";
+        HTMLLista += "Titulo 2";
         HTMLLista += '</h3>';
 				
 				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="false" style="display: block;">';
            
-        HTMLLista += Encoder.htmlDecode(varTxt02);
+        HTMLLista += "Texto de Prueba 2";
         HTMLLista += '</div>';
         $accordion.append( HTMLLista );				
 
