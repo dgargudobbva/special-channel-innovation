@@ -28,6 +28,12 @@
 	<UserPref name="varTxt09" display_name="URL fichero Texto 9:" default_value=""/>
 	<UserPref name="varTit10" display_name="Titulo Texto 10:" default_value=""/>
 	<UserPref name="varTxt10" display_name="URL fichero Texto 10:" default_value=""/>
+	<UserPref name="varTit11" display_name="Titulo Texto 11:" default_value=""/>
+	<UserPref name="varTxt11" display_name="URL fichero Texto 11:" default_value=""/>
+	<UserPref name="varTit12" display_name="Titulo Texto 12:" default_value=""/>
+	<UserPref name="varTxt12" display_name="URL fichero Texto 12:" default_value=""/>
+	<UserPref name="varTit13" display_name="Titulo Texto 13:" default_value=""/>
+	<UserPref name="varTxt13" display_name="URL fichero Texto 13:" default_value=""/>
 
 	<Content type="html" view="configuration" preferred_height="480">
 	<![CDATA[
@@ -112,6 +118,18 @@
       <tr><td><input type="text" id="varTit10" class="opcTitulo" value="__UP_varTit10__" onchange="GuardarUserPref('varTit10')"></td></tr>
 			<tr><td><input type="text" id="varTxt10" class="opcTexto" value="__UP_varTxt10__" onchange="GuardarUserPref('varTxt10')"></td></tr>
 
+			<tr><td>T&iacute;tulo y Texto a mostrar Undecimo Elemento: </td></tr>
+      <tr><td><input type="text" id="varTit11" class="opcTitulo" value="__UP_varTit11__" onchange="GuardarUserPref('varTit11')"></td></tr>
+			<tr><td><input type="text" id="varTxt11" class="opcTexto" value="__UP_varTxt11__" onchange="GuardarUserPref('varTxt11')"></td></tr>
+
+			<tr><td>T&iacute;tulo y Texto a mostrar Duodecimo Elemento: </td></tr>
+      <tr><td><input type="text" id="varTit12" class="opcTitulo" value="__UP_varTit12__" onchange="GuardarUserPref('varTit12')"></td></tr>
+			<tr><td><input type="text" id="varTxt12" class="opcTexto" value="__UP_varTxt12__" onchange="GuardarUserPref('varTxt12')"></td></tr>
+
+			<tr><td>T&iacute;tulo y Texto a mostrar Decimo Tercer Elemento: </td></tr>
+      <tr><td><input type="text" id="varTit13" class="opcTitulo" value="__UP_varTit13__" onchange="GuardarUserPref('varTit13')"></td></tr>
+			<tr><td><input type="text" id="varTxt13" class="opcTexto" value="__UP_varTxt13__" onchange="GuardarUserPref('varTxt13')"></td></tr>
+
 		<script type="text/javascript">
 		/* Almacenar los valores de usuario del gadget */
 			var prefs = new gadgets.Prefs(); 	
@@ -167,6 +185,12 @@
 			var varTxt09=prefs.getString("varTxt09");
 			var varTit10=prefs.getString("varTit10");
 			var varTxt10=prefs.getString("varTxt10");
+			var varTit11=prefs.getString("varTit11");
+			var varTxt11=prefs.getString("varTxt11");
+			var varTit12=prefs.getString("varTit12");
+			var varTxt12=prefs.getString("varTxt12");
+			var varTit13=prefs.getString("varTit13");
+			var varTxt13=prefs.getString("varTxt13");
 			var HTMLLista = "";
 		<!-- Pintamos los elementos que tengan Titulo y Texto. -->
 			/* Generar el codigo HTML Primer Elemento*/
@@ -296,6 +320,45 @@
 				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-18" aria-labelledby="ui-id-17" role="tabpanel" aria-hidden="false" style="display: block;">';
            
         HTMLLista += Encoder.htmlDecode(varTxt10);
+        HTMLLista += '</div>';
+        $accordion.append( HTMLLista );				
+			} ;
+			/* Generar el codigo HTML Undecimo Elemento*/			
+			if ((varTit11!="")&&(varTxt11!=""))	{
+				HTMLLista = '<h3 class="ui-accordion-header ui-state-default ui-corner-top ui-accordion-icons" role="tab" id="ui-id-19" aria-controls="ui-id-20" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>';
+         
+        HTMLLista += Encoder.htmlDecode(varTit11);
+        HTMLLista += '</h3>';
+				
+				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-20" aria-labelledby="ui-id-19" role="tabpanel" aria-hidden="false" style="display: block;">';
+           
+        HTMLLista += Encoder.htmlDecode(varTxt11);
+        HTMLLista += '</div>';
+        $accordion.append( HTMLLista );				
+			} ;
+			/* Generar el codigo HTML Duodecimo Elemento*/			
+			if ((varTit12!="")&&(varTxt12!=""))	{
+				HTMLLista = '<h3 class="ui-accordion-header ui-state-default ui-corner-top ui-accordion-icons" role="tab" id="ui-id-21" aria-controls="ui-id-22" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>';
+         
+        HTMLLista += Encoder.htmlDecode(varTit12);
+        HTMLLista += '</h3>';
+				
+				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-22" aria-labelledby="ui-id-21" role="tabpanel" aria-hidden="false" style="display: block;">';
+           
+        HTMLLista += Encoder.htmlDecode(varTxt12);
+        HTMLLista += '</div>';
+        $accordion.append( HTMLLista );				
+			} ;
+			/* Generar el codigo HTML Decimo Tercer Elemento*/			
+			if ((varTit13!="")&&(varTxt13!=""))	{
+				HTMLLista = '<h3 class="ui-accordion-header ui-state-default ui-corner-top ui-accordion-icons" role="tab" id="ui-id-23" aria-controls="ui-id-24" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>';
+         
+        HTMLLista += Encoder.htmlDecode(varTit13);
+        HTMLLista += '</h3>';
+				
+				HTMLLista += '<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-24" aria-labelledby="ui-id-23" role="tabpanel" aria-hidden="false" style="display: block;">';
+           
+        HTMLLista += Encoder.htmlDecode(varTxt13);
         HTMLLista += '</div>';
         $accordion.append( HTMLLista );				
 			} ;
