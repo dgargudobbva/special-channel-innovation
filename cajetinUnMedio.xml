@@ -45,7 +45,7 @@
 				color: #3F78B2;
 			}
 			a.enlaceboton {
-				background-image: url("https://bbvagcs.googlecode.com/svn/trunk/fondoboton.png");
+				background-image: url("https://ace5f176-a-8e9718e0-s-sites.googlegroups.com/a/bbva.com/special-channels-innovation/home/galeria/fondoboton.png?attachauth=ANoY7cq94_qqXwonzob1XL6nr6DlHDTSj0yBzHJmkL4h2PqOJpbTF1MhuBUAWzqsN-pvA9bShh3aYuDM0rgUFz2NUgz9sYkG7W9TI7GKxWhJLcyQWggjjvXW2_WaY7Vl5EsyPUPZNHrtMCMve8kvL6PC9m6nORY0g9qYO4SGDdb0fRAvhUzv2ab5QkTN03R-MmkApB71n37XDxevOHGWsU95oJdRhz6s9_uK3wG_siW8zg0IbZl0DAL7jhXVo_Xkf97fLkPb8OXP&attredirects=0");
 				background-repeat: no-repeat;
 				color: #FFFFFF;
 				display: block;
