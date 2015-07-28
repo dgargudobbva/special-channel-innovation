@@ -30,7 +30,7 @@
 				padding: 0 15px 10px 0;
 			}
 			#content_div {
-				background-image: url('https://special-channel-innovation.googlecode.com/svn/trunk/fondocajetinuntercio.png');
+				background-image: url(https://raw.githubusercontent.com/dgargudobbva/special-channel-innovation/master/fondocajetinuntercio.png');
 			}
 			#content_div a img {
 				padding: 0;
@@ -44,7 +44,7 @@
 				color: #3F78B2;
 			}			
 			a.enlaceboton {
-				background-image: url("https://special-channel-innovation.googlecode.com/svn/trunk/fondobotonuntercio.png");
+				background-image: url('https://raw.githubusercontent.com/dgargudobbva/special-channel-innovation/master/fondocajetinuntercio.png');
 				background-repeat: no-repeat;
 				color: #FFFFFF;
 				display: block;
