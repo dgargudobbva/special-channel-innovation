@@ -71,7 +71,7 @@
 	
 		<div id="content_div"  style="height:150px; background-image:url(https://special-channel-innovation.googlecode.com/svn/trunk/fondocajetinuntercio.png); background-color: transparent; background-repeat: no-repeat; background-position: top; "></div>
 
-		<script type="text/javascript" src="https://github.com/dgargudobbva/special-channel-innovation/blob/master/js/bbcode2html.js"></script>
+		<script type="text/javascript" src="https://raw.githubusercontent.com/dgargudobbva/special-channel-innovation/master/js/bbcode2html.js"></script>
 
 		<script type="text/javascript">
 			var html="";
@@ -140,7 +140,7 @@
 	</Content>  
 	<Content type="html" view="configuration"  preferred_height="480">
 	<![CDATA[
-		<script type="text/javascript" src="https://github.com/dgargudobbva/special-channel-innovation/blob/master/js/editorbbcode.js"></script>
+		<script type="text/javascript" src="https://raw.githubusercontent.com/dgargudobbva/special-channel-innovation/master/js/editorbbcode.js"></script>
 		<style>
 			table td {
 				color: #000;
